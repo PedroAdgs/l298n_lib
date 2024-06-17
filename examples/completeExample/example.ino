@@ -8,9 +8,11 @@
 #define IN3 5
 #define IN4 4
 
-L298N motorController(ENA, IN1, IN2, ENB, IN3, IN4); //instância
+L298N motorController(ENA, IN1, IN2, ENB, IN3, IN4); //Objeto criado (motores) -> criar um objeto por motor
 
-void setup() {}
+void setup(){
+ Serial.begin(9600); //inicializa comunicação serial
+ }
 
 void loop()
  {

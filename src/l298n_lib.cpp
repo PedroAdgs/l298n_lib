@@ -1,6 +1,6 @@
 #include "l298n_lib.hpp"
 
-L298N::L298N(int ena, int in1, int in2, int enb, int in3, int in4)
+L298N::L298N(int ena, int in1, int in2, int enb, int in3, int in4) //configurações do objeto
 {
   ENA = ena;
   IN1 = in1;
@@ -17,7 +17,11 @@ L298N::L298N(int ena, int in1, int in2, int enb, int in3, int in4)
   pinMode(IN4, OUTPUT);
 }
 
-void L298N::setSpeed(int motor, int speed)
+/*
+ * Função setSpeed -> altera a velocidade (PWM) dos motores, minimo=0 e máximo=255 
+ */
+
+void L298N::setSpeed(int motor, int speed) 
 {
   if (motor == 1)
   {
@@ -26,6 +30,10 @@ void L298N::setSpeed(int motor, int speed)
     analogWrite(ENB, speed);
   }
 }
+
+/*
+ * Funções de movimento -> alteram os valores dos pinos de entrada da ponte
+ */
 
 void L298N::forward()
 {
