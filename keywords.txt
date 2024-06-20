@@ -1,0 +1,7 @@
+L298N	KEYWORD1
+forward	KEYWORD2
+left	KEYWORD2
+right	KEYWORD2
+backward	KEYWORD2
+setSpeed	KEYWORD2
+
