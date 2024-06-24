@@ -4,4 +4,4 @@ left	KEYWORD2
 right	KEYWORD2
 backward	KEYWORD2
 setSpeed	KEYWORD2
-
+stop  KEYWORD2
