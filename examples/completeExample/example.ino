@@ -1,4 +1,4 @@
-#include "l298n_lib"
+#include "l298n_lib.h"
 
 //defina aqui os pinos utilizados
 #define ENA 9
